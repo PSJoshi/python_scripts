@@ -19,8 +19,8 @@ def cmd_arguments():
     try:
         parser = argparse.ArgumentParser("This script is used to launch Http DoS against any server. Use it at your own risks!")
 
-        parser.add_argument('--host', help='Please specify configuration file',dest='host',default='127.0.0.1')
-        parser.add_argument('--port', help='Please specify configuration file',dest='port',default=80)
+        parser.add_argument('--host', help='Please specify host',dest='host',default='127.0.0.1')
+        parser.add_argument('--port', help='Please specify port',dest='port',default=80)
         args = parser.parse_args()
         return args.host, args.port
 
